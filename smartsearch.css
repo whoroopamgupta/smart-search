@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f3f5f8;
+}
+
+.texteditor {
+  width: 100vw;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#search {
+  width: 35vw;
+  height: 8vh;
+  border: none;
+}
+
+input {
+  border: none;
+  appearance: none;
+  font-size: 1.2rem;
+  padding: 12px;
+  outline: none;
+  border-radius: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* margin-bottom: 0; */
+  /* margin-left: 1rem; */
+  box-shadow: 0px 1.5px 3px 0px rgb(69, 60, 78);
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+input::placeholder {
+  color: rgb(126, 96, 96);
+  transition: color 0.3s ease;
+}
+
+.buttons {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  width: 25vw;
+  height: 15vh;
+  background: white;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  display: flex;
+  margin-top: 5vh;
+  /* justify-content: space-around; */
+  justify-content: center;
+  font-size: 1.5rem;
+  /* align-items: flex-start; */
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.25s ease;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-shadow: 0px 1.5px 3px 0px rgb(72, 50, 98);
+}
+
+.button:hover {
+  /* cursor: pointer; */
+  border: 0px solid rgb(72, 50, 98);
+  box-shadow: none;
+  transform: scale(1.01);
+  /* background: whitesmoke; */
+  box-shadow: 1.5px 0px 3px 0px rgb(72, 50, 98);
+}
+
+img {
+  height: 45px;
+  width: 45px;
+  margin-right: 1vw;
+}
+
+a {
+  text-decoration: none;
+  color: burlywood;
+}
+
+@media only screen and (max-width: 900px) {
+  .texteditor {
+    height: 20vh;
+  }
+  #search {
+    width: 70vw;
+    height: 10vh;
+  }
+
+  .button {
+    /* flex-direction: row; */
+    width: 50vw;
+    height: 10vh;
+    font-size: 1rem;
+    box-shadow: 0px 1.5px 3px 0px rgb(72, 50, 98);
+  }
+  button:hover {
+    box-shadow: 1.5px 0px 3px 0px rgb(72, 50, 98);
+  }
+  img {
+    height: 25px;
+    width: 25px;
+  }
+  input {
+    font-size: 0.9rem;
+  }
+}
